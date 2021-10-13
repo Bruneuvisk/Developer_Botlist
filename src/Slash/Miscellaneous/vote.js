@@ -85,7 +85,7 @@ module.exports = {
 
         let embedlogs = new MessageEmbed()
             .setTitle(`${emojis.emojibot} | O Bot ${botzin.user.username}#${botzin.user.discriminator} recebeu um voto`)
-            .setDescription(`**${emojis.emojicerto}・O ${interaction.member} votou no bot com sucesso, o bot agora possui um total de \`${crote.voto + 1}\`**`)
+            .setDescription(`**${emojis.emojicerto}・O ${interaction.member} votou no bot com sucesso, o bot agora possui um total de \`${crote.voto + 1}\` votos**`)
             .setColor(config.color)
             .setThumbnail(botzin.user.avatarURL())
             .setFooter(`${botzin.user.username}#${botzin.user.discriminator}`, botzin.user.avatarURL())
