@@ -1,0 +1,23 @@
+{
+    "token": "ODkzMTYyMjA5NjUwMjg2NjAy.YVXcIA.zPvORzae37o8eWRNdUj-0L9DBfQ",
+    "prefix": "dev!",
+    "color": "#2f3136",
+    "mongoDB": "mongodb+srv://developer:LkHxkjUOcvjJO4ld@developer.ehpec.mongodb.net/Developer",
+    "slashCommandsDirs": [
+        {
+            "Folder": "Informacao",
+            "CmdName": "info",
+            "CmdDescription": "Descreve informações sobre mim!"
+        },
+        {
+            "Folder": "Miscellaneous",
+            "CmdName": "misce",
+            "CmdDescription": "Alguns comandos de utilidades!"
+        },
+        {
+            "Folder": "Botlist",
+            "CmdName": "bot",
+            "CmdDescription": "Comandos da área de botlist!"
+        }
+    ]
+}
