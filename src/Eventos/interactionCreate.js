@@ -66,7 +66,7 @@ module.exports = async (client, interaction) => {
           if (command.memberperm.includes(Permissions.FLAGS.CREATE_INSTANT_INVITE)) permissions.push('`Criar convite`');
           if (command.memberperm.includes(Permissions.FLAGS.CHANGE_NICKNAME)) permissions.push('`Alterar apelido`')
           if (command.memberperm.includes(Permissions.FLAGS.MANAGE_NICKNAMES)) permissions.push('`Gerenciar apelidos`');
-          if (command.memberperm.includes(Permissions.FLAGS.MANAGE_EMOJIS)) permissions.push('`Gerenciar emojis`');
+          if (command.memberperm.includes(Permissions.FLAGS.MANAGE_EMOJIS_AND_STICKERS)) permissions.push('`Gerenciar emojis e stickers`');
           if (command.memberperm.includes(Permissions.FLAGS.MANAGE_WEBHOOKS)) permissions.push('`Gerenciar webhooks`');
           if (command.memberperm.includes(Permissions.FLAGS.VIEW_CHANNEL)) permissions.push('`Ler canais de texto e ver canais de voz`');
           if (command.memberperm.includes(Permissions.FLAGS.SEND_MESSAGES)) permissions.push('`Enviar mensagens`');
@@ -95,7 +95,7 @@ module.exports = async (client, interaction) => {
 
           let embedperms = new MessageEmbed()
               .setTitle(`${emojis.emojierror} | Error de Perms`)
-              .setDescription(`${emojis.emojierror} **|** ${message.author}, você não pode executar esse comandos \n Perms Necessárias: ${permissions.join(", ")}.`) 
+              .setDescription(`${emojis.emojierror} **|** <@${interaction.member.id}>, você não pode executar esse comandos \n Perms Necessárias: ${permissions.join(", ")}.`) 
               .setColor(config.color)
               .setThumbnail(interaction.guild.iconURL({dynamic: true}))
               .setFooter(`${interaction.guild.name} | Developer BOT`, interaction.guild.iconURL({dynamic: true}))
@@ -116,7 +116,7 @@ module.exports = async (client, interaction) => {
           if (command.clientperm.includes(Permissions.FLAGS.CREATE_INSTANT_INVITE)) permissions.push('`Criar convite`');
           if (command.clientperm.includes(Permissions.FLAGS.CHANGE_NICKNAME)) permissions.push('`Alterar apelido`');
           if (command.clientperm.includes(Permissions.FLAGS.MANAGE_NICKNAMES)) permissions.push('`Gerenciar apelidos`');
-          if (command.clientperm.includes(Permissions.FLAGS.MANAGE_EMOJIS)) permissions.push('`Gerenciar emojis`');
+          if (command.clientperm.includes(Permissions.FLAGS.MANAGE_EMOJIS_AND_STICKERS)) permissions.push('`Gerenciar emojis e stickers`');
           if (command.clientperm.includes(Permissions.FLAGS.MANAGE_WEBHOOKS)) permissions.push('`Gerenciar webhooks`');
           if (command.clientperm.includes(Permissions.FLAGS.VIEW_CHANNEL)) permissions.push('`Ler canais de texto e ver canais de voz`');
           if (command.clientperm.includes(Permissions.FLAGS.SEND_MESSAGES)) permissions.push('`Enviar mensagens`');
